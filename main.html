@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify - Web Player: Music for everyone</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="utility.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+</head>
+
+<body>
+
+    <div class="container bg-black flex">
+
+        <div class="left">
+            <div class="close">
+                <i class="ri-close-large-line close" style="color: #fff;"></i>
+            </div>
+            <div class="home bg-grey rounded m-1 p-1">
+                <div class="logo bg-grey">
+                    <img class="invert" src="svg/logo.svg" alt="LOGO">
+                </div>
+                <ul>
+                    <li><img class="invert" src="svg/home.svg" alt="HOME">HOME</li>
+                    <li><img class="invert" src="svg/search.svg" alt="SEARCH">SEARCH</li>
+                </ul>
+            </div>
+            <div class="library bg-grey rounded m-1 p-1">
+                <div class="heading">
+                    <img class="invert" src="svg/playlist.svg" alt="SVG">
+                    <p>
+                        YOUR LIBRARY
+                    </p>
+                </div>
+                <div class="songlist">
+                    <ul>
+
+                    </ul>
+                </div>
+
+                <div class="footer">
+
+                    <div><a href="https://www.spotify.com/pk-en/legal/" id="" data-encore-id="textLink"><span
+                                data-encore-id="type">Legal</span></a>
+                    </div>
+                    <div>
+                        <a href="https://www.spotify.com/pk-en/safetyandprivacy/" id="" data-encore-id="textLink">
+                            <span data-encore-id="type">Safety &amp; Privacy Center</span>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://www.spotify.com/pk-en/legal/privacy-policy/" id="" data-encore-id="textLink">
+                            <span data-encore-id="type">Privacy Policy</span>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://www.spotify.com/pk-en/legal/cookies-policy/" id="" data-encore-id="textLink">
+                            <span data-encore-id="type">Cookies</span>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://www.spotify.com/pk-en/legal/privacy-policy/#s3" id=""
+                            data-encore-id="textLink">
+                            <span data-encore-id="type">About Ads</span>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://www.spotify.com/pk-en/accessibility/" id="" data-encore-id="textLink">
+                            <span data-encore-id="type">Accessibility</span>
+                        </a>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+
+        <div class="right rounded bg-grey">
+            <div class="header">
+                <div class="nav">
+                    <div class="flex justify-centre items-centre" style="gap: 18px;">
+                        <i class="ri-menu-line hamburger" style="color: #fff; transform: scale(2);"></i>
+
+                        <i class="ri-arrow-left-s-line " style="color: #fff;"></i>
+                        <i class="ri-arrow-right-s-line" style="color: #fff;"></i>
+                    </div>
+                </div>
+                <div class="buttons">
+                    <button class="signupbtn">SIGN UP</button>
+                    <button class="loginbtn">LOG IN</button>
+                </div>
+            </div>
+            <div class="spotifyPlaylists">
+                <h1>Spotify Playlist</h1>
+                <div class="cardContainer">
+                    
+                </div>
+                <div class="playbar">
+                    <div class="seekbar">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="abovebar">
+
+                        <div class="songinfo"></div>
+                        <div class="songsbuttons">
+                            <i id="previous" class="ri-skip-back-fill"></i>
+                            <i id="play" class="ri-pause-circle-fill" style="color: #3BE377;"></i>
+                            <i id="next" class="ri-skip-forward-fill"></i>
+                        </div>
+                        <div class="timevol">
+                            <div class="songtime"></div>
+                            <div class="volume">
+                                <i class="ri-volume-up-line" id="audioPlayer" style="cursor: pointer;"></i>
+                                <div class="range">
+                                    <input id="volbtn" type="range" name="volume" min="0" max="1" step="0.01" value="1">
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
